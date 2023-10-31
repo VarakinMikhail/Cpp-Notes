@@ -1,7 +1,8 @@
 #include <iostream>
 #include <fstream>
-namespace Program{
-    class Note{
+
+namespace Program {
+    class Note {
     private:
         std::string _name;
         std::string _content;
@@ -17,7 +18,7 @@ namespace Program{
         Note(std::string& name, std::string& content): _name(name), _content(content) {};
     };
 
-    class Vault{
+    class Vault {
     public:
         static std::string GetNoteContent(const std::string& name, const std::string& file) {
             std::string res;
